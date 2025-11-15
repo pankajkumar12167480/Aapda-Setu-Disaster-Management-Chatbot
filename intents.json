@@ -1,0 +1,191 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Hey there",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Is anyone there?",
+        "How are you?",
+        "What's up?",
+        "Yo",
+        "Hi bot",
+        "Hello Aapda",
+        "Namaste",
+        "Greetings",
+        "Are you online?",
+        "Can you help me?",
+        "Anybody here?",
+        "Hi, I need help"
+      ],
+      "responses": [
+        "Hello! I'm Aapda Bot. How can I assist you today?",
+        "Hi there! Need help?",
+        "Hey! How can I support you today?",
+        "Hello! I’m here to assist you with any disaster or emergency information."
+      ]
+    },
+    {
+      "tag": "about_aapda_setu",
+      "patterns": [
+        "What is Aapda Setu?",
+        "Tell me about Aapda Setu",
+        "What does Aapda Setu do?",
+        "Explain Aapda Setu",
+        "Who created Aapda Setu?",
+        "What is the purpose of Aapda Setu?",
+        "Is Aapda Setu a government project?",
+        "What services does Aapda Setu provide?",
+        "How can Aapda Setu help me?",
+        "What is this app about?"
+      ],
+      "responses": [
+        "Aapda Setu is a disaster management and emergency response platform to help people quickly connect with aid, rescue, and safety resources.",
+        "Aapda Setu connects citizens with emergency services and relief centers during disasters like floods, fires, or earthquakes.",
+        "It’s an initiative designed to improve disaster response and provide quick information and assistance."
+      ]
+    },
+    {
+      "tag": "disaster_help",
+      "patterns": [
+        "I need help in flood",
+        "There is a flood here",
+        "Flood alert",
+        "My area is flooded",
+        "Flood emergency",
+        "There is a fire",
+        "Fire accident",
+        "Building is on fire",
+        "Fire emergency",
+        "Earthquake alert",
+        "There was an earthquake",
+        "The ground is shaking",
+        "Cyclone warning",
+        "Tsunami alert",
+        "Landslide here",
+        "Heavy rain emergency",
+        "Storm damage",
+        "Need emergency help",
+        "Rescue me",
+        "Send help",
+        "Where is the nearest relief center?",
+        "Whom should I contact in a disaster?",
+        "Emergency contact number?",
+        "Help me during earthquake",
+        "I am trapped",
+        "How can I report a disaster?",
+        "There is an accident nearby"
+      ],
+      "responses": [
+        "Please stay calm. Share your location, and we’ll connect you to your nearest relief center.",
+        "I understand it’s urgent. Please provide your current location, and I’ll guide you to the nearest help center or emergency contact.",
+        "Stay safe! You can call the national disaster helpline at 1078 or local emergency services for immediate help.",
+        "Help is on the way. Please stay in a safe area and avoid danger zones until responders arrive."
+      ]
+    },
+    {
+      "tag": "safety_tips",
+      "patterns": [
+        "What to do during a flood?",
+        "Flood safety tips",
+        "How to stay safe in an earthquake?",
+        "Safety tips for earthquake",
+        "Fire safety tips",
+        "How to prepare for a disaster?",
+        "What should I do during a cyclone?",
+        "How can I protect my family?",
+        "How to stay safe in disaster?",
+        "Tips to stay safe"
+      ],
+      "responses": [
+        "During a flood, move to higher ground, avoid walking in water, and keep an emergency kit ready.",
+        "In an earthquake, take cover under sturdy furniture, stay away from windows, and don’t run outside until shaking stops.",
+        "For fires, evacuate immediately and call the fire department. Avoid using elevators.",
+        "Always keep emergency contacts and a first-aid kit handy."
+      ]
+    },
+    {
+      "tag": "emergency_numbers",
+      "patterns": [
+        "Emergency number",
+        "Disaster helpline number",
+        "Fire department number",
+        "Police number",
+        "Ambulance number",
+        "Rescue helpline",
+        "Helpline number for disaster",
+        "National disaster helpline",
+        "Give me emergency contacts",
+        "I need to call for help"
+      ],
+      "responses": [
+        "Here are some important numbers:\nNational Disaster Helpline: 1078\nPolice: 100\nAmbulance: 102\nFire: 101",
+        "You can dial 1078 for the national disaster management helpline or 100 for the police.",
+        "For medical emergencies, call 102 or 108 (ambulance)."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Talk to you soon",
+        "See ya",
+        "Take care",
+        "Thank you, bye",
+        "Ok bye",
+        "I’m leaving",
+        "Catch you later"
+      ],
+      "responses": [
+        "Stay safe! You can always reach me here if you need help.",
+        "Goodbye! Remember, safety first.",
+        "Take care! I’m always here if you need assistance.",
+        "Bye! Stay alert and safe."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Thanks a lot",
+        "Thank you so much",
+        "Appreciate your help",
+        "Thanks buddy",
+        "Thanks Aapda",
+        "Thank you bot",
+        "You're helpful"
+      ],
+      "responses": [
+        "You're welcome! I'm glad I could help.",
+        "Anytime! Stay safe out there.",
+        "No problem! Always here to assist you.",
+        "Glad I could help! 😊"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        "asdfgh",
+        "qwerty",
+        "something random",
+        "I don’t know what to ask",
+        "Tell me something",
+        "Can you repeat?",
+        "What can you do?"
+      ],
+      "responses": [
+        "I didn’t quite get that. Could you please repeat?",
+        "I’m not sure I understood. You can ask me about disasters, emergencies, or safety tips.",
+        "I can help with disaster information, safety, and emergency contacts. What would you like to know?"
+      ]
+    }
+  ]
+}

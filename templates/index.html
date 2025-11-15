@@ -1,0 +1,63 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Aapda Setu Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; background:#eef2f3; display:flex; justify-content:center; padding:30px; }
+    #chatbox { width: 420px; background: #fff; padding: 18px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+    #messages { height: 400px; overflow-y: auto; padding: 8px; border-radius:8px; border:1px solid #eee; background:#fafafa; }
+    .msg { margin: 8px 0; padding: 10px; border-radius: 10px; max-width: 85%; }
+    .user { background:#DCF8C6; align-self:flex-end; text-align:right; margin-left:auto; }
+    .bot { background:#F1F0F0; align-self:flex-start; text-align:left; margin-right:auto; }
+    #input-area { display:flex; gap:8px; margin-top:10px; }
+    input[type="text"]{flex:1; padding:10px; border-radius:8px; border:1px solid #ccc;}
+    button{padding:10px 14px; border-radius:8px; border:none; background:#007bff; color:white; cursor:pointer;}
+    button:disabled{background:#999; cursor:not-allowed;}
+  </style>
+</head>
+<body>
+  <div id="chatbox">
+    <h3>💬 Aapda Setu Chatbot</h3>
+    <div id="messages"></div>
+
+    <div id="input-area">
+      <input id="message" type="text" placeholder="Type your message here..." onkeydown="if(event.key === 'Enter') sendMessage()"/>
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+<script>
+const messagesDiv = document.getElementById('messages');
+
+function addMessage(text, cls){
+  const d = document.createElement('div');
+  d.className = 'msg ' + cls;
+  d.textContent = text;
+  messagesDiv.appendChild(d);
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+async function sendMessage(){
+  const inp = document.getElementById('message');
+  const message = inp.value.trim();
+  if(!message) return;
+  addMessage(message, 'user');
+  inp.value = '';
+  try {
+    const res = await fetch('/chat', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ message })
+    });
+    const data = await res.json();
+    addMessage(data.reply, 'bot');
+  } catch(err) {
+    addMessage("Error connecting to server.", 'bot');
+  }
+}
+</script>
+</body>
+</html>
